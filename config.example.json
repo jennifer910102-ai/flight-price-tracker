@@ -1,0 +1,40 @@
+{
+    "users": {
+        "me": {
+            "monitor_config": {
+                "segments": [
+                    {
+                        "segment_no": 1,
+                        "origin": "TPE",
+                        "destination": "KIX",
+                        "date_schedules": [
+                            {
+                                "date": "2027-03-20",
+                                "flights": []
+                            },
+                            {
+                                "date": "2027-03-21",
+                                "flights": ["GK50"]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "trips": [
+                {
+                    "name": "美西旅行",
+                    "outbound_date": "2027-07-20",
+                    "return_date": "2027-07-26",
+                    "options": [
+                        {"label": "SAN 轉機", "origin": "TPE", "destination": "SAN", "max_stops": 1},
+                        {"label": "LAX 直飛", "origin": "TPE", "destination": "LAX", "max_stops": 0}
+                    ],
+                    "max_layover_hours": 6,
+                    "allow_overnight_layover": false,
+                    "alert_min_diff": 500,
+                    "min_interval_hours": 20
+                }
+            ]
+        }
+    }
+}
